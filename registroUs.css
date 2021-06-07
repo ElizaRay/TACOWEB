@@ -1,20 +1,18 @@
-
 body {
     /*background-color: darksalmon;*/
-    background-image: url(img/F4.png);
+    background-image: url(img/F2.jpg);
     margin: 0;
     padding: 0;
     text-align: center;
     width: 100%;
     height: 100%;
     position: absolute;
-
 }
-
  
 h1 {
     font-family:'Courier New', Courier, monospace;
     font-size: 2rem;
+    color:deeppink;
 }
  
 label {
@@ -22,8 +20,8 @@ label {
     display: inline-block;
     text-align:center;
     font-size: 1.5rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:green;
 }
  
 input {
@@ -33,21 +31,22 @@ input {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
     position: right;
+    width: 400px;
 }
  
 form {
     border: 2px solid rgb(226, 18, 18);
     background:violet;
     text-align:center;
-    width: 550px;
+    width: 200px;
 }
  
 div.form-element {
-    margin: 10px 10;
+    margin: 10px 20;
     text-align:center;
 }
  
-button {
+/*button {
     padding: 10px;
     font-size: 1.5rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -55,13 +54,8 @@ button {
     background:lime;
     color: white;
     border: none;
-}
+}*/
 
 b {
     font-size: 1.5rem;
-    /*font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
-}
-
-pre{
-    position: absolute;
 }

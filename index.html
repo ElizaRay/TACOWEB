@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    
+    <!--CSS-->
+    <style>@import 'login.css';</style>
+    <!--<link rel="stylesheet" href="css/login.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+      <!--Incorporar app.js-->
+      <script src="Tlogin.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="#">
+        <img src="img/LOGO.png" alt="logo" style="width:40px;">
+    </a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <h1 class="text-white" href="#">Bienvenido a Taco Web...</h1> 
+         </li> 
+         </ul>
+    </nav>
+
+<div class="row">
+    <div class="col-sm-6">
+        </br>
+        <img src="img/imagen3.jpg" alt="Inicio" width="460" height="460" class="rounded">
+        </br>
+        <b style="color: rgb(243, 41, 243);">¿No tienes una cuenta?</b>
+            <a onclick='href="registro.html"'><button class="btn btn-primary ">Registrate <i class="fas fa-arrow-right" style="color: blue;"></i></button></a>
+        </br></br>
+        <b style="color:rgb(252, 163, 30);">¿Olvidaste tu contraseña?</b>
+        <a onclick='href="recuperar.html"'><button class="btn btn-info ">Recupera tu contraseña <i class="fas fa-arrow-right" style="color: blue;"></i></button></a>
+
+    </div>
+        <div class="col-sm-6">
+          <!--  <form >--></br>
+            <img src="img/usuario.jpg"  class="rounded-circle" alt="avatar" width="270" height="270">
+            </br> </br>
+            <pre class="bg-primary text-white">Estimado usuario ingrese su correo electronico y contraseña para Iniciar Sesion</pre> 
+                </br></br>
+                <div class="form-element">
+                    <label><i class="fas fa-envelope"></i>  Correo Electronico: </label>
+                    <input type="email" id="emailI" placeholder="ejemplo@mail.com" required />
+                </div>
+                </br>
+                <div class="form-element">
+                    <label><i class="fas fa-key"></i>  Contraseña:</label>
+                    <input  type="password" id="passwordI" placeholder="**********" required/>
+                </div>
+                </br>
+                <button onclick="ingresar()">Iniciar Sesion<i class="fas fa-arrow-right" style="color: green;"></i></button></br></br>
+            <!--</form>-->
+          
+        </div>
+</div>    
+
+</body>
+</html>

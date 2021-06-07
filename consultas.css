@@ -1,20 +1,19 @@
-
+/*este diseño css va a aparecer en consultarCL, pedidosR y peedidosT */
 body {
-    /*background-color: darksalmon;*/
-    background-image: url(img/F4.png);
+    /* background-image: url(img/F1.jpg);*/
+    background-image: url(img/F3.jpg);
     margin: 0;
     padding: 0;
     text-align: center;
     width: 100%;
     height: 100%;
     position: absolute;
-
 }
-
  
-h1 {
-    font-family:'Courier New', Courier, monospace;
-    font-size: 2rem;
+h2 {
+   /*font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;*/
+    color:greenyellow;
 }
  
 label {
@@ -22,8 +21,8 @@ label {
     display: inline-block;
     text-align:center;
     font-size: 1.5rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(154, 11, 162);
 }
  
 input {
@@ -33,18 +32,21 @@ input {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
     position: right;
+    width: 300px;
+
 }
  
 form {
-    border: 2px solid rgb(226, 18, 18);
-    background:violet;
-    text-align:center;
+    border: 2px solid rgb(154, 11, 162);
+    background:lightsalmon;
+    text-align: center;
     width: 550px;
 }
  
 div.form-element {
     margin: 10px 10;
     text-align:center;
+   /* width: 500px;*/
 }
  
 button {
@@ -56,12 +58,12 @@ button {
     color: white;
     border: none;
 }
-
 b {
     font-size: 1.5rem;
     /*font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
 }
 
-pre{
+/*pre{
     position: absolute;
 }
+*/

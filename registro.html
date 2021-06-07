@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Inicio de Sesion </title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    
+    <!--CSS-->
+    <style>@import 'registro.css';</style>
+    <!--<link rel="stylesheet" href="css/registro.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+      <!--Incorporar app.js-->
+      <script src="Tlogin.js"></script>
+</head>
+<body >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="img/LOGO.png" alt="logo" style="width:50px;">
+        </a>
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <h1 class="text-white" href="#">Taco Web...</h1> 
+            </li> 
+            <button1 class="btn btn-danger btn-lg" onclick="cerrar()">Cerrar Sesion <i class="fas fa-remove" ></i></button>
+            </ul>
+    </nav>
+    
+<div class="row">
+    <div class="col-sm-6">
+        </br>
+        <img src="img/vector-mexican-chef-holding-plate-with-tacos.jpg" alt="Inicio" width="550" height="500" class="rounded">
+        </br></br>
+        <button class="btn btn-primary btn-lg" onclick="location='index.html'"> <i class="fas fa-arrow-left"></i> Regresar al Inicio</button>
+                
+        <!--button class="btn btn-primary btn-lg" onclick="location='menu.html'">Ir a Menu <i class="fas fa-arrow-right"></i></button>-->
+        </br></br>        
+    </div>
+
+    <div class="col-sm-6">
+        <!--<form >--></br>
+         <img src="img/login.jpg"  class="rounded-circle" alt="avatar" width="250" height="250">
+        </br></br>
+             <!---<div class="form-element">
+                <label>Ingrese un Nombre de Usuario</label>
+                <input type="text" id="usuario" pattern="[a-zA-Z0-9]+" required />
+            </div>-->
+        <pre class="bg-primary text-white">Ingrese los datos para registrarse...</pre></br>
+            <div class="form-element">
+                <label style="color:darkmagenta;"><i class="fas fa-envelope" style="color:darkmagenta;"></i>   Correo Electronico:</label>
+                <input type="email" id="email" placeholder="ejemplo@mail.com" required />
+            </div>
+             </br>
+            <div class="form-element">
+                <label style="color:darkmagenta;"><i class="fas fa-key" style="color:darkmagenta;"></i>    Contraseña:</label>
+                <input type="password" id="password" placeholder="*********" required/>
+            </div>
+             </br>
+            <button onclick="registrar()">Guardar Datos <i class="fas fa-arrow-right" style="color: green;"></i></button>
+            </br></br>
+        <!--</form>-->    
+    </div>
+</div>
+
+</body>
+</html>

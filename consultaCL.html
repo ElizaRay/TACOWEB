@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Usuario</title>
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     
+         <!--CSS-->
+         <style>@import 'consultas.css';</style>
+        <!--<link rel="stylesheet" href="css/consultas.css">-->
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+       
+     <!--FireBase-->
+     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+     
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="#">
+        <img src="img/LOGO.png" alt="logo" style="width:50px;">
+    </a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <h1 class="text-white" href="#">Taco Web...</h1> 
+         </li> 
+         <button1 class="btn btn-danger btn-lg" onclick="cerrar()">Cerrar Sesion <i class="fas fa-remove" ></i></button>
+      </ul>
+  </nav>
+    </br>
+    
+  </br>
+    <a onclick='href="index.html"'><button class="btn btn-info btn-block btn-lg"><b><i class="fas fa-arrow-left" style="color: blue;"></i>  Regresar al Inicio</b></button></a>
+
+    <button class="btn btn-primary btn-block btn-lg"  onclick="mostrar()" ><b>Consultar Datos</b></button>
+
+  </br>
+<!---<div class="row">
+      <div class="col-sm-12">-->
+        <div class="text-center container">
+          </br>
+          <h2>Datos Registrados<h2>
+          </div>
+          </br>
+            <div clas="table-responsive-sm">
+                <table class="table table-dark table-striped">
+                    <thead class="thead">
+                      <tr>
+                        <th scope="col" class="text-center">Id</th>
+                        <th scope="col" class="text-center">Nombre</th>
+                        <th scope="col" class="text-center">Apellido Paterno</th>
+                        <th scope="col" class="text-center">Apellido Materno</th>
+                        <th scope="col" class="text-center">Telefono</th>
+                        <th scope="col" class="text-center">Domicilio</th>
+                        <th scope="col" class="text-center">Correo Electronico</th>
+                        <th scope="col" class="text-center">Editar</th>
+                      </tr>
+                    </thead>
+                        <tbody id="tabla"></tbody>
+                </table>
+            </div>
+        </div>
+   <!--</div>-->
+<!--</div>-->
+
+<div id="mostra"></div>
+
+    <!--Script Para Inicializar FIREBASE-->
+       <script src="app.js"></script>
+</body>
+</html>

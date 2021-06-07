@@ -1,19 +1,15 @@
-
 body {
-    /*background-color: darksalmon;*/
-    background-image: url(img/F4.png);
+    background-image: url(img/imagen4.jpg);
     margin: 0;
     padding: 0;
     text-align: center;
     width: 100%;
     height: 100%;
     position: absolute;
-
 }
-
  
 h1 {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Passion One';
     font-size: 2rem;
 }
  
@@ -27,18 +23,17 @@ label {
 }
  
 input {
-    border: 2px solid rgb(167, 164, 164);
+    border: 2px solid #ccc;
     font-size: 1rem;
-    font-weight: 100;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-family: 'Lato';
     padding: 10px;
-    position: right;
 }
  
 form {
-    border: 2px solid rgb(226, 18, 18);
-    background:violet;
-    text-align:center;
+    border: 2px solid rgb(154, 11, 162);
+    background:lightsalmon;
+    text-align: center;
     width: 550px;
 }
  
@@ -55,13 +50,4 @@ button {
     background:lime;
     color: white;
     border: none;
-}
-
-b {
-    font-size: 1.5rem;
-    /*font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
-}
-
-pre{
-    position: absolute;
 }

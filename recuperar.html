@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+
+    <!--CSS-->
+    <style>@import 'recuperarContr.css';</style>
+    <!--<link rel="stylesheet" href="css/recuperarContr.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+      <!--Incorporar app.js-->
+      <script src="Tlogin.js"></script>
+</head>
+<body >           
+</br>
+<div class="row">
+    <div class="col-sm-6">
+   
+            <pre class="bg-primary text-white">Ingrese su correo para recuperar su contraseña...</pre>
+            <div class="form-element">
+                <label> <i class="fas fa-envelope"></i>Correo Electronico</label>
+                <input type="email" id="email" placeholder="ejemplo@mail.com" required />
+            </div>
+        
+            </br>
+            <button type="submit" onclick="enviarCorr()">Enviar Correo</button>
+            </br></br>
+            <button class="btn btn-info btn-lg" onclick="location='index.html'"> <i class="fas fa-arrow-left"></i> Regresar</button>
+    </div>
+
+    <div class="col-sm-6">
+            
+        <pre class="bg-primary text-white">Ingrese su nueva contraseña...</pre>
+        <div class="form-element">
+            <label><i class="fas fa-key"></i>    Contraseña:</label>
+            <input type="password" id="password" placeholder="*********" required/>
+        </div>
+            </br>
+            <button type="submit" onclick="recuperar()">Restablecer Contraseña</button>
+            </br></br>
+          <!--</form>-->
+          <button class="btn btn-info btn-lg" onclick="location='index.html'"> <i class="fas fa-arrow-left"></i> Regresar</button>
+    </div>
+        
+</div>
+
+</body>
+</html>
