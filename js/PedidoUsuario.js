@@ -11,10 +11,12 @@ firebase.initializeApp({
   //Agregar Registro
   var db = firebase.firestore();
   var Tabla = document.getElementById('Tabla1');
+  var Tabla2 = document.getElementById('Tabla2');
+  var Tabla3 = document.getElementById('Tabla3')
   
 
   db.collection("Burritos").onSnapshot((querySnapshot) => {
-              //Tabla.innerHTML = '';//limpia mi tabla
+              Tabla.innerHTML = '';//limpia mi tabla
               querySnapshot.forEach((doc) => {
               console.log(`${doc.id} => ${doc.data().Burritos}`);
               Tabla.innerHTML += `
@@ -26,31 +28,53 @@ firebase.initializeApp({
                   <td>${doc.data().Preparacion3}</td>
                   <td>${doc.data().Tamaño}</td>
                   <td>${doc.data().cantBurritos}</td>
-                  <td>${doc.data().Pagar}</td>
+                  <td>${doc.data().PagarBurritos}</td>
               </tr>
               `
              
           });
       });
 
-      var TablaTacos = document.getElementsByName('Tabla2');
-
       db.collection("Tacos").onSnapshot((querySnapshot) => {
-        //Tabla.innerHTML = '';//limpia mi tabla
+        Tabla2.innerHTML = '';//limpia mi tabla
         querySnapshot.forEach((doc) => {
-            console.log("--------------------")
+        console.log("/*****************Tacos********************/")
         console.log(`${doc.id} => ${doc.data().Tacos}`);
-        TablaTacos.innerHTML += `
+        Tabla2.innerHTML += `
         <tr>
             <th scope="row">${doc.id}</th> 
             <td>${doc.data().Tacos}</td>
             <td>${doc.data().Picadillo}</td>
             <td>${doc.data().Nopales}</td>
             <td>${doc.data().cantTacos}</td>
-            <td>${doc.data().Pagar}</td>
+            <td>${doc.data().PagarTacos}</td>
+            
         </tr>
         `
        
     });
 });
-                
+
+db.collection("Tortas").onSnapshot((querySnapshot) => {
+    Tabla3.innerHTML = '';//limpia mi tabla
+    querySnapshot.forEach((doc) => {
+    console.log("/*********Tortas****************************/")
+    console.log(`${doc.id} => ${doc.data().Torta}`);
+    Tabla3.innerHTML += `
+    <tr>
+        <th scope="row">${doc.id}</th> 
+        <td>${doc.data().Torta}</td>
+        <td>${doc.data().Preparacion1}</td>
+        <td>${doc.data().Preparacion2}</td>
+        <td>${doc.data().Preparacion3}</td>
+        <td>${doc.data().cantTortas}</td>
+        <td>${doc.data().PagarTortas}</td>
+        
+    </tr>
+    `
+   
+});
+});
+
+
+    
